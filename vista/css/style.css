@@ -88,7 +88,7 @@ main img{
     margin-top: 50px;
 }
 
-.card{
+.card-desc{
     border: none;
     box-shadow: 10px 10px 5px;
 }
@@ -107,11 +107,53 @@ main img{
 }
 .btn{
     background-color: #ACD550;
-    color: #000000;
     font-weight: 500;
+    display: flex;
+    gap: 5px;
+    width: 80%;
+    align-items: center;
 }
 
-.btn:hover{
+.btn:hover {
     background-color: #6a8d17;
+}
+
+.btn:hover h5,
+.btn:hover p:nth-child(3){
     color: #ffffff;
+}
+
+.btn:hover p:nth-child(2){
+    color: rgb(167, 71, 71)
+}
+
+
+.btn p:nth-child(2){
+    text-decoration: line-through;
+    color: rgb(20, 61, 99);
+}
+
+.btn p:nth-child(3){
+    color: #2d806b;
+}
+
+.btn p , h5{
+    margin: 0;
+    padding: 0;
+}
+
+.banner-2{
+    grid-column: 2/3;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.banner-2 img{
+    width: 82%;
+}
+
+.contenedor-generos{
+    grid-column: 2/3;
+    display: flex;
+    gap: 20px;
 }
