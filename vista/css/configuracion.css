@@ -20,6 +20,7 @@ header{
     align-items: center;
     justify-content: center;
     gap: 80px;
+    
 }
 
 .link{
@@ -59,4 +60,89 @@ aside{
 
 aside h6{
     color: #5585BF;
+}
+.tarjeta {
+    display: flex;
+    align-items: center;
+    background-color: #33475b;
+    border-radius: 20px;
+    width: 600px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+.tarjeta{
+    margin: 5%;
+    position: relative;
+    top: 50%;
+    left: 25%;
+}
+
+.fondo {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 180px; /* Espacio para la imagen */
+    position: relative;
+    background: url('imagen-fondo.jpg') center/cover no-repeat;
+}
+
+.contenedor-imagen {
+    width: 120px;
+    height: 120px;
+    background-color: #88c0d0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+    z-index: 2;
+    position: absolute;
+    top: 90px;
+}
+
+.contenedor-imagen img {
+    width: 90%;
+    border-radius: 50%;
+}
+
+.campos {
+    color: white;
+    font-family: Arial, sans-serif;
+  
+}
+
+.campos p {
+
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    padding: 10px 15px;
+    margin: 10px 0;
+    width: 70%;
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: #1B2838;
+    color: #ACD550;
+    height: 100px;
+    
+}
+
+footer p{
+    width: 50%;
+    padding: 0;
+    margin: 0;
 }
