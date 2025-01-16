@@ -1,0 +1,37 @@
+header{
+    background-color: #1B2838;
+    color: white;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    grid-column: 1 / 3;
+
+}
+.contenedor{
+    display: grid;
+    grid-template-columns: 3fr 8fr; /* Dos columnas */
+    grid-template-rows: repeat(3, auto); /* Dos filas */
+    padding-left: 10px;
+}
+
+.lista{
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+}
+
+.link{
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.logo{
+    width: 40px;
+    height: 40px;
+}

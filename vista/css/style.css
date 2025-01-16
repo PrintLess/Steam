@@ -2,16 +2,6 @@ body{
     background-color: #2A475E;
 }
 
-header{
-    background-color: #1B2838;
-    color: white;
-    height: 70px;
-    display: flex;
-    align-items: center;
-    grid-column: 1 / 3;
-
-}
-
 .contenedor{
     display: grid;
     grid-template-columns: 3fr 8fr; /* Dos columnas */
@@ -162,7 +152,7 @@ main img{
 }
 
 .item-genero{
-    width: 220px;
+    width: 210px;
     height: 200px;
     background-image: linear-gradient(to bottom,rgba(19, 66, 153, 0.603)50%,rgb(0, 112, 177)100%),url("../img/fondo-categorias.jpg");
     background-repeat: no-repeat;
@@ -191,20 +181,3 @@ main img{
     transition: 0.5s;
 }
 
-footer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    background-color: #1B2838;
-    color: #ACD550;
-    height: 100px;
-    
-}
-
-footer p{
-    width: 50%;
-    padding: 0;
-    margin: 0;
-}
