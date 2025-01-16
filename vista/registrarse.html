@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Steam ºººººªªªª </title>
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/footer.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    
+    <link rel="stylesheet" href="css/registrar.css">
+    <title>Registrarse</title>
 </head>
 <body>
     <!-- navbar -->
@@ -22,6 +22,57 @@
                 <li><a href="#" class="link"><img src="img/usuario.png" class="logo" alt=""></a></li>
             </ul>
         </nav>
-</header>
+    </header>
+
+    <main>
+        <div class="contenedor-form">
+            <h3>Registrarse</h3>
+            <div class="form-back">
+                <form action="">
+                    Nombres <br><input type="text" name="Nombres" required>
+                    Apellidos <br><input type="text" name="Apellidos" required>
+                    Email <br><input type="email" name="email" required>
+                    Usuario <br><input type="text" name="Usuario"required>
+                    Contraseña <br><input type="password" name="Password" required>
+                    Tarjeta <br><input type="text" name="tarjeta" required>
+                    Region <br> <select name="pais" required>
+                        <option value="Peru">Perú</option>
+                        <option value="Chile">Chile</option>
+                        <option value="Colombia">Colombia</option>
+                        <option value="Venezuela">Venezuela</option>
+                        <option value="Argentina">Argentina</option>
+                        <option value="Brasil">Brasil</option>
+                        <option value="México">México</option>
+                        <option value="Ecuador">Ecuador</option>
+                        <option value="Bolivia">Bolivia</option>
+                        <option value="Paraguay">Paraguay</option>
+                        <option value="Uruguay">Uruguay</option>
+                        <option value="Guatemala">Guatemala</option>
+                        <option value="Honduras">Honduras</option>
+                        <option value="El Salvador">El Salvador</option>
+                        <option value="Panama">Panamá</option>
+                        <option value="Costa Rica">Costa Rica</option>
+                        <option value="Nicaragua">Nicaragua</option>
+                        <option value="Puerto Rico">Puerto Rico</option>
+                        <option value="República Dominicana">República Dominicana</option>
+                        <option value="Cuba">Cuba</option>
+                        <option value="España">España</option>
+                        <option value="Francia">Francia</option>
+                        <option value="Italia">Italia</option>
+                        <option value="Alemania">Alemania</option>
+                        <option value="Estados Unidos">Estados Unidos</option>
+                    </select>
+                    <input class="boton" type="submit" value="Registrarse">
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>©2024 Nombre de tu Empresa. Todos los derechos reservados.</p>
+        <p>Política de privacidad | Términos y condiciones | Contacto</p>
+        <p>Síguenos en: Facebook | Instagram | Twitter</p>
+      </footer>
+
 </body>
 </html>
