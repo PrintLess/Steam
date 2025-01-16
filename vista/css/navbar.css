@@ -1,0 +1,9 @@
+header{
+    background-color: #1B2838;
+    color: white;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    grid-column: 1 / 3;
+
+}
