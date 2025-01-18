@@ -44,13 +44,105 @@ header {
 #banner {
     width: 100%;
     padding-bottom: 30px;
+    position: relative;
 }
 
-.carousel-inner img {
+.carousel-inner {
+    display: flex;
+    position: relative;
     width: 100%;
     height: 500px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.carousel-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.carousel-item.active {
+    position: relative;
+    opacity: 1;
+}
+
+.carousel-content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.carousel-content h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.carousel-content p {
+    font-size: 16px;
+}
+
+.carousel-thumbnails {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.carousel-thumbnails img {
+    width: 60px;
+    height: 60px;
     object-fit: cover;
-    box-shadow: 0 10px 10px #0a2240;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.carousel-thumbnails img:hover {
+    transform: scale(1.1);
+    border: 2px solid #5585BF;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.carousel-control-prev:hover, .carousel-control-next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.carousel-control-prev {
+    left: 20px;
+}
+
+.carousel-control-next {
+    right: 20px;
 }
 
 h1, h2 {
@@ -81,25 +173,4 @@ footer p {
 .img-fluid {
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-}
-
-.btn {
-    background-color: #D1D1D1;
-    color: #2A475E;
-    border: none;
-    padding: 10px 20px;
-    font-size: 14px;
-    transition: background-color 0.3s, transform 0.2s;
-    border-radius: 5px;
-}
-
-.btn:hover {
-    background-color: #5585BF;
-    color: white;
-    transform: scale(1.05);
-}
-
-h3 {
-    margin-bottom: 20px;
-    color: #FFFFFF;
 }
