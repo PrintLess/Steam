@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steam - Biblioteca</title>
+    <link rel="stylesheet" href="css/biblioteca.css">
+</head>
+<body class="biblioteca-page">
+    <header>
+        <nav class="main-nav">
+            <div class="nav-left">
+                <div class="logo">STEAM</div>
+                <ul class="nav-links">
+                    <li><a href="index.html">TIENDA</a></li>
+                    <li><a href="biblioteca.html" class="active">BIBLIOTECA</a></li>
+                    <li><a href="comunidad.html">COMUNIDAD</a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <div class="user-controls">
+                    <span class="username">Usuario</span>
+                    <span class="wallet">S/159.95</span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="biblioteca-main">
+        <aside class="game-list">
+            <div class="filter-controls">
+                <input type="text" placeholder="Buscar juegos...">
+                <select>
+                    <option>Todos los juegos</option>
+                    <option>Instalados</option>
+                    <option>Favoritos</option>
+                </select>
+            </div>
+            <div class="games-list">
+                <div class="game-item active">
+                    <img src="https://images.unsplash.com/photo-1552820728-8b83bb6b773f?auto=format&fit=crop&q=80&w=2070" alt="DayZ">
+                    <span>DayZ</span>
+                </div>
+                <div class="game-item">
+                    <img src="https://images.unsplash.com/photo-1538481199705-c710c4e965fc?auto=format&fit=crop&q=80&w=2070" alt="The Witcher 3">
+                    <span>The Witcher 3</span>
+                </div>
+            </div>
+        </aside>
+        
+        <section class="game-details">
+            <div class="game-header">
+                <h1>DayZ</h1>
+                <div class="game-actions">
+                    <button class="play-button">▶ Jugar</button>
+                    <button>⚙️ Gestionar</button>
+                </div>
+            </div>
+            <div class="game-stats">
+                <div class="stat">
+                    <span>Tiempo jugado</span>
+                    <strong>123 horas</strong>
+                </div>
+                <div class="stat">
+                    <span>Último acceso</span>
+                    <strong>Ayer</strong>
+                </div>
+            </div>
+            <div class="achievements">
+                <h3>Logros</h3>
+                <div class="achievement-grid">
+                    <div class="achievement">
+                        <img src="https://images.unsplash.com/photo-1538481199705-c710c4e965fc?auto=format&fit=crop&q=80&w=100" alt="Logro">
+                        <span>Superviviente</span>
+                    </div>
+                    <!-- Más logros aquí -->
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
