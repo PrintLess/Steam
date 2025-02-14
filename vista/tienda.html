@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Steam Store Clone</title>
-    <link rel="stylesheet" href="css/biblioteca.css">
+    <title>Steam - Tienda</title>
+    <link rel="stylesheet" href="css/tienda.css">
 </head>
 <body>
     <header>
@@ -12,99 +12,124 @@
             <div class="nav-left">
                 <div class="logo">STEAM</div>
                 <ul class="nav-links">
-                    <li><a href="#">TIENDA</a></li>
-                    <li><a href="#">BIBLIOTECA</a></li>
-                    <li><a href="#">COMUNIDAD</a></li>
-                    <li><a href="#">ACERCA DE</a></li>
+                    <li><a href="tienda.html" class="active">TIENDA</a></li>
+                    <li><a href="biblioteca.html">BIBLIOTECA</a></li>
+                    <li><a href="comunidad.html">COMUNIDAD</a></li>
+                    <li><a href="soporte.html">SOPORTE</a></li>
                 </ul>
             </div>
             <div class="nav-right">
-                <div class="search-bar">
-                    <input type="text" placeholder="Buscar juegos...">
+                <div class="user-profile">
+                    <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&q=80&w=50" alt="Usuario" class="profile-pic">
                 </div>
-                <div class="cart-icon">🛒</div>
             </div>
         </nav>
     </header>
 
-    <main>
-        <section class="hero-slider">
-            <div class="featured-game">
-                <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&q=80&w=2070" alt="Juego Destacado">
-                <div class="game-info">
-                    <h2>Cyberpunk 2077</h2>
-                    <div class="price-tag">
-                        <span class="discount">-20%</span>
-                        <span class="price">$59.99</span>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <main class="store-main">
+        <div class="game-header">
+            <a href="#" class="back-button">←Tienda-Juegos</a>
+        </div>
 
-        <section class="special-offers">
-            <h2>OFERTAS ESPECIALES</h2>
-            <div class="games-grid">
-                <div class="game-card">
-                    <img src="https://images.unsplash.com/photo-1552820728-8b83bb6b773f?auto=format&fit=crop&q=80&w=2070" alt="Red Dead Redemption 2">
-                    <div class="game-details">
-                        <h3>Red Dead Redemption 2</h3>
-                        <div class="price-info">
-                            <span class="discount">-33%</span>
-                            <span class="price">$49.99</span>
+        <div class="marketplace-container">
+            <div class="item-list">
+                <div class="market-item">
+                    <div class="item-info">
+                        <img src="img/CupHead.png" alt="Item" class="item-image">
+                        <div class="item-details">
+                            <h3>CupHead</h3>
+                            <span class="item-condition">Factory New</span>
+                        </div>
+                    </div>
+                    <div class="item-price">
+                        <span>S/ 159.95</span>
+                        <div class="action-buttons">
+                            <button class="btn-guardar">GUARDAR</button>
+                            <button class="btn-comprar">COMPRAR</button>
                         </div>
                     </div>
                 </div>
-                <div class="game-card">
-                    <img src="https://images.unsplash.com/photo-1538481199705-c710c4e965fc?auto=format&fit=crop&q=80&w=2070" alt="The Witcher 3">
-                    <div class="game-details">
-                        <h3>The Witcher 3</h3>
-                        <div class="price-info">
-                            <span class="discount">-50%</span>
-                            <span class="price">$39.99</span>
+
+                <div class="market-item">
+                    <div class="item-info">
+                        <img src="img/Mortal Kombat X.jpeg" alt="Item" class="item-image">
+                        <div class="item-details">
+                            <h3>Mortal Kombat X</h3>
+                            <span class="item-condition">Minimal Wear</span>
+                        </div>
+                    </div>
+                    <div class="item-price">
+                        <span>S/ 89.95</span>
+                        <div class="action-buttons">
+                            <button class="btn-guardar">GUARDAR</button>
+                            <button class="btn-comprar">COMPRAR</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="market-item">
+                    <div class="item-info">
+                        <img src="img/Resident evil.jpeg" alt="Item" class="item-image">
+                        <div class="item-details">
+                            <h3>Resident Evil</h3>
+                            <span class="item-condition">Field-Tested</span>
+                        </div>
+                    </div>
+                    <div class="item-price">
+                        <span>S/ 299.95</span>
+                        <div class="action-buttons">
+                            <button class="btn-guardar">GUARDAR</button>
+                            <button class="btn-comprar">COMPRAR</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="market-item">
+                    <div class="item-info">
+                        <img src="img/Dota2.png" alt="Item" class="item-image">
+                        <div class="item-details">
+                            <h3>Dota 2</h3>
+                            <span class="item-condition">Battle-Scarred</span>
+                        </div>
+                    </div>
+                    <div class="item-price">
+                        <span>S/ 129.95</span>
+                        <div class="action-buttons">
+                            <button class="btn-guardar">GUARDAR</button>
+                            <button class="btn-comprar">COMPRAR</button>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
 
-        <section class="categories">
-            <h2>NAVEGAR POR CATEGORÍA</h2>
-            <div class="category-grid">
-                <div class="category-card">Acción</div>
-                <div class="category-card">Aventura</div>
-                <div class="category-card">RPG</div>
-                <div class="category-card">Deportes</div>
-                <div class="category-card">Estrategia</div>
-                <div class="category-card">Indie</div>
+            <div class="pagination">
+                <button class="prev-btn">← Previous</button>
+                <div class="page-numbers">
+                    <span class="active">1</span>
+                    <span>2</span>
+                    <span>3</span>
+                    <span>...</span>
+                    <span>67</span>
+                    <span>68</span>
+                </div>
+                <button class="next-btn">Next →</button>
             </div>
-        </section>
+        </div>
     </main>
 
     <footer>
         <div class="footer-content">
-            <div class="footer-section">
-                <h3>Acerca de Steam</h3>
-                <ul>
-                    <li><a href="#">Sobre Nosotros</a></li>
-                    <li><a href="#">Trabajos</a></li>
-                    <li><a href="#">Steam Works</a></li>
-                </ul>
+            <p>© 2024 Nombre de tu Empresa. Todos los derechos reservados.</p>
+            <div class="footer-links">
+                <a href="#">Política de privacidad</a> |
+                <a href="#">Términos y condiciones</a> |
+                <a href="#">Contacto</a>
             </div>
-            <div class="footer-section">
-                <h3>Ayuda</h3>
-                <ul>
-                    <li><a href="#">Soporte</a></li>
-                    <li><a href="#">Foros</a></li>
-                    <li><a href="#">Estadísticas</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h3>Noticias</h3>
-                <ul>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Actualizaciones</a></li>
-                    <li><a href="#">Eventos</a></li>
-                </ul>
+            <div class="social-links">
+                Síguenos en:
+                <a href="#">Facebook</a> |
+                <a href="#">Instagram</a> |
+                <a href="#">Twitter</a>
             </div>
         </div>
     </footer>
