@@ -1,0 +1,307 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1b2838;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+/* Header & Navigation */
+header {
+    background-color: #171a21;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.main-nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #66c0f4;
+    text-shadow: 0 0 10px rgba(102, 192, 244, 0.3);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    color: #c7d5e0;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    padding: 0.5rem 1rem;
+    border-radius: 3px;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #ffffff;
+    background-color: #316282;
+}
+
+.user-profile .profile-pic {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.user-profile .profile-pic:hover {
+    transform: scale(1.1);
+}
+
+/* Store Main Content */
+.store-main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.game-header {
+    margin-bottom: 2rem;
+}
+
+.back-button {
+    color: #66c0f4;
+    text-decoration: none;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.back-button:hover {
+    color: #ffffff;
+}
+
+/* Marketplace Container */
+.marketplace-container {
+    background-color: #16202d;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.item-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.market-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #1b2838;
+    border-radius: 6px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.market-item:hover {
+    transform: translateX(5px);
+    background-color: #213347;
+}
+
+.item-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.item-image {
+    width: 64px;
+    height: 64px;
+    border-radius: 4px;
+    object-fit: cover;
+}
+
+.item-details h3 {
+    color: #ffffff;
+    margin-bottom: 0.25rem;
+}
+
+.item-condition {
+    color: #66c0f4;
+    font-size: 0.9rem;
+}
+
+.item-price {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.item-price span {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.btn-guardar,
+.btn-comprar {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.btn-guardar {
+    background-color: #316282;
+    color: #ffffff;
+}
+
+.btn-guardar:hover {
+    background-color: #3d7ba3;
+}
+
+.btn-comprar {
+    background-color: #5c7e10;
+    color: #ffffff;
+}
+
+.btn-comprar:hover {
+    background-color: #729c15;
+}
+
+/* Pagination */
+.pagination {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.page-numbers {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.page-numbers span {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.page-numbers span:hover,
+.page-numbers span.active {
+    background-color: #316282;
+}
+
+.prev-btn,
+.next-btn {
+    background: none;
+    border: none;
+    color: #66c0f4;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+    color: #ffffff;
+}
+
+/* Footer */
+footer {
+    background-color: #171a21;
+    padding: 2rem;
+    margin-top: 4rem;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    color: #c7d5e0;
+}
+
+.footer-links,
+.social-links {
+    margin-top: 1rem;
+}
+
+.footer-content a {
+    color: #66c0f4;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-content a:hover {
+    color: #ffffff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .market-item {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .item-info {
+        flex-direction: column;
+    }
+
+    .item-price {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .action-buttons {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .store-main {
+        padding: 1rem;
+    }
+
+    .marketplace-container {
+        padding: 1rem;
+    }
+
+    .page-numbers span:not(.active) {
+        display: none;
+    }
+}
